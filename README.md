@@ -9,3 +9,7 @@ Great review on "playing" with variables to load the contend using each method.
 
 ### Vid 3
 
+Nice review on the conection between input and label, i understood how it works for this particulary project, but for more clearence about it i need more practice with id and for attributes.
+
+### Vid 4
+
