@@ -3,8 +3,16 @@
   var myJobTitle = "Front End Developer"
   var socialList = [
     {
+      "icon": "linkedin",
+       "url": "https://www.linkedin.com/in/timotei-dumitru-1494ab160"
+    },
+    {
       "icon": "github",
        "url": "https://github.com/ShokadinuEU"
+    },
+    {
+      "icon": "earth",
+       "url": "https://shokadinueu.github.io/fashion-today/"
     },
     {
       "icon": "facebook2",
@@ -19,20 +27,12 @@
        "url": "https://www.youtube.com/channel/UC1Um2yxwhLCDEURVFfEYuzw"
     },
     {
-      "icon": "linkedin",
-       "url": "https://www.linkedin.com/in/timotei-dumitru-1494ab160"
-    },
-    {
       "icon": "stackoverflow",
        "url": "https://stackoverflow.com/users/9764786/dumitru-timotei?tab=profile"
     },
     {
       "icon": "twitter",
        "url": "https://twitter.com"
-    },
-    {
-      "icon": "earth",
-       "url": "https://bitbee.com"
     }
   ]
 #landing-page
@@ -45,3 +45,8 @@
         li.landing-page__item
           label.landing-page__label(for="")
             span(class=`my-cv__icon--${social.icon}`)
+    .landing-page__box-body
+      each social in socialList
+        input.landing-page__box-radio(type="radio")
+        .landing-page__box-image
+          a.landing-page__box-link(href=social.url, target="_blank") social.url

@@ -5,3 +5,7 @@ I understood what gulp is and how amazing tool is for automation tasks like conv
 ### Vid 2
 
 I like this method of using block to load the content, i am not that clear about this method particulary work "block" is this standing for a variable that store everuthing that is in it so we can use wherever we want or is something else even "cooler".
+Great review on "playing" with variables to load the contend using each method.
+
+### Vid 3
+
