@@ -1,0 +1,47 @@
+-
+  var myFullName = "Timotei Dumitru"
+  var myJobTitle = "Front End Developer"
+  var socialList = [
+    {
+      "icon": "github",
+       "url": "https://github.com/ShokadinuEU"
+    },
+    {
+      "icon": "facebook2",
+       "url": "https://facebook.com/dumy.timy"
+    },
+    {
+      "icon": "google-plus2",
+       "url": "https://plus.google.com/112277218680998369339"
+    },
+    {
+      "icon": "youtube",
+       "url": "https://www.youtube.com/channel/UC1Um2yxwhLCDEURVFfEYuzw"
+    },
+    {
+      "icon": "linkedin",
+       "url": "https://www.linkedin.com/in/timotei-dumitru-1494ab160"
+    },
+    {
+      "icon": "stackoverflow",
+       "url": "https://stackoverflow.com/users/9764786/dumitru-timotei?tab=profile"
+    },
+    {
+      "icon": "twitter",
+       "url": "https://twitter.com"
+    },
+    {
+      "icon": "earth",
+       "url": "https://bitbee.com"
+    }
+  ]
+#landing-page
+.landing-page
+  .landing-page__wrapper
+    h1.landing-page__name=myFullName
+    h2.landing-page__title=myJobTitle
+    ul.landing-page__social
+      each social in socialList
+        li.landing-page__item
+          label.landing-page__label(for="")
+            span(class=`my-cv__icon--${social.icon}`)
