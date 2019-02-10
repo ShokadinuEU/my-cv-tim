@@ -16,3 +16,22 @@
   width: 100%;
   border: 0.5rem solid $color-terracotta;
 }
+
+.about-me__avatar-wrapper {
+  max-width: 50%;
+  margin: 1rem auto;
+  border: 0.5rem solid $color-gerladine;
+  border-radius: 50%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 0.5rem solid $color-terracotta;
+    top: -1.5rem;
+    bottom: -1.5rem;
+    left: -1.5rem;
+    right: -1.5rem;
+    border-radius: 50%;
+  }
+}
