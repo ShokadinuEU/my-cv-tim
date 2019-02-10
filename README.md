@@ -14,3 +14,7 @@ Nice review on the conection between input and label, i understood how it works 
 ### Vid 4
 
 Tested out how content scale with and without fluid typography and i had some "ahaaa" moment when i try to set the height of the class landing-page to 100% but it didn't took any effect cus i forgot to set the height of body/html to 100%.
+
+### Vid 6
+
+Good review on javascript variables, how to store data into variables and how to print the data from variables into DOM.

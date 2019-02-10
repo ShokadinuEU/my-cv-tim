@@ -9,6 +9,26 @@
     title: 'contasd',
     content: 'cwontasd'
   }
+  var myDocuments = {
+    title: "eee",
+    buttonList: [
+      {
+        url: "https://github.com/ShokadinuEU/my-cv-tim",
+        icon: "github",
+        label: "Click to visit GitHub project source!"
+      },
+      {
+        url: "asset/doc/Resume__Timotei-Dumitru.docx",
+        icon: "file-word",
+        label: "Click to download my resume."
+      },
+      {
+        url: "asset/doc/Cover-Letter__Timotei-Dumitru.docx",
+        icon: "file-word",
+        label: "Click to download my cover letter."
+      }
+    ]
+  } 
 
 // the view comes here
 #about-me
@@ -21,3 +41,9 @@
   .about-me__full-mySlogan=mySlogan
 
   .about-me__title=achievements.title
+  .about-me__content=achievements.content
+
+  each document in myDocuments.buttonList
+    a(href=document.url)
+      span=document.label
+      span(class=`my-cv__icon--${document.icon}`)
