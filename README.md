@@ -18,3 +18,6 @@ Tested out how content scale with and without fluid typography and i had some "a
 ### Vid 6
 
 Good review on javascript variables, how to store data into variables and how to print the data from variables into DOM.
+
+### Vid 7
+

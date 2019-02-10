@@ -10,7 +10,7 @@
     content: 'cwontasd'
   }
   var myDocuments = {
-    title: "eee",
+    title: "Check out some cool stuffs!",
     buttonList: [
       {
         url: "https://github.com/ShokadinuEU/my-cv-tim",
@@ -43,7 +43,9 @@
   .about-me__title=achievements.title
   .about-me__content=achievements.content
 
-  each document in myDocuments.buttonList
-    a(href=document.url)
-      span=document.label
-      span(class=`my-cv__icon--${document.icon}`)
+  .about-me__title=myDocuments.title
+  .about-me__link-list
+    each document in myDocuments.buttonList
+      a(href=document.url)
+        span=document.label
+        span(class=`my-cv__icon--${document.icon}`)
