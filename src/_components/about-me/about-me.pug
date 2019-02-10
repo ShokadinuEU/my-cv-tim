@@ -1,0 +1,23 @@
+// data comes here
+-
+  var header = '#about me'
+  var imagePath = 'asset/image/about-me-avatar.jpg'
+  var myFullName = 'Timotei Dumitru'
+  var myTitle = 'Junior Front-End Developer'
+  var mySlogan = 'The fool didn\'t know it was impossible. So he did it.'
+  var achievements = {
+    title: 'contasd',
+    content: 'cwontasd'
+  }
+
+// the view comes here
+#about-me
+.about-me
+  .about-me__header=header
+  .about-me__avatar-wrapper
+    img.about-me__avatar(src=imagePath)
+  .about-me__full-name=myFullName
+  .about-me__full-title=myTitle
+  .about-me__full-mySlogan=mySlogan
+
+  .about-me__title=achievements.title
