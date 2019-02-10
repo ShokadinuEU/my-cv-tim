@@ -35,3 +35,53 @@
     border-radius: 50%;
   }
 }
+
+.about-me__full-name {
+  font-size: 3rem;
+}
+
+.about-me__title {
+  font-size: 1.9rem;
+  color: $color-gumbo;
+}
+
+.about-me__full-name,
+.about-me__title {
+  color: $color-white;
+  padding: 0 0.7rem 1.5rem;
+  text-align: center;
+}
+
+.about-me__slogan,
+.about-me__content {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.about-me__link-list {
+  text-align: center;
+  padding-bottom: 0.3rem;
+}
+
+.about-me__link {
+  display: inline-block;
+  width: 80%;
+  font-size: 3rem;
+  text-decoration: none;
+  border: 0.1rem solid $color-gumbo;
+  border-radius: 1rem;
+  background-color: $color-white;
+  color: $color-gumbo;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.about-me__link-description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}

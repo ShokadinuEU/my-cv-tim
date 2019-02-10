@@ -1,13 +1,15 @@
 // data comes here
 -
-  var header = '#about me'
-  var imagePath = 'asset/image/about-me-avatar.jpg'
-  var myFullName = 'Timotei Dumitru'
-  var myTitle = 'Junior Front-End Developer'
-  var mySlogan = 'The fool didn\'t know it was impossible. So he did it.'
-  var achievements = {
-    title: 'contasd',
-    content: 'cwontasd'
+  var header = '#about-me'
+  var imagePath = "asset/image/about-me-avatar.jpg"
+  var myFullName = "Timotei Dumitru"
+  var myTitle = "Self-Taught Person"
+  var slogan = "I make the front-end world a better place every day."
+  var achivement = {
+    title: 'Achivement',
+    content: `I've built a custom SEO CMS that boostedsearch result 
+    position in Google's first place in tens of clients and their websites without
+    any aditional effort and minimum or no training at all.`
   }
   var myDocuments = {
     title: "Check out some cool stuffs!",
@@ -37,15 +39,15 @@
   .about-me__avatar-wrapper
     img.about-me__avatar(src=imagePath)
   .about-me__full-name=myFullName
-  .about-me__full-title=myTitle
-  .about-me__full-mySlogan=mySlogan
+  .about-me__title=myTitle
+  .about-me__slogan=slogan
 
-  .about-me__title=achievements.title
-  .about-me__content=achievements.content
+  .about-me__title=achivement.title
+  .about-me__content=achivement.content
 
   .about-me__title=myDocuments.title
   .about-me__link-list
     each document in myDocuments.buttonList
-      a(href=document.url)
-        span=document.label
+      a.about-me__link(href=document.url)
+        span.about-me__link-description=document.label
         span(class=`my-cv__icon--${document.icon}`)
