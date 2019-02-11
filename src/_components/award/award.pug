@@ -1,0 +1,39 @@
+-
+  var awardHeader = '#awards';
+  var awardList = [
+      {
+      title: 'Creativity at its best 2016',
+      description: 'Nominalized for top 3 content creator.',
+      location: 'Targoviste - Creative House',
+      date: '2016'
+      },
+      {
+      title: 'Best 30s elevator speed speach',
+      description: 'I`ve won 1st place twice and 2nd place once.',
+      location: 'Google Campus - Bucharest',
+      date: '2015'
+      },
+      {
+      title: 'Top 10 designers of "Valahia" University',
+      description: 'I\'ve won 3nd place for electric circuit design.',
+      location: 'Valahia Campus - Targoviste',
+      date: '2013'
+      }
+    ];
+#award
+.award
+  .award__header=awardHeader
+  each award in awardList
+    .award__card
+      .award__icon
+        span.my-cv__icon--trophy
+      .award__title=award.title
+      .award__icon
+        span.my-cv__icon--info
+      .award__description=award.description
+      .award__icon
+        span.my-cv__icon--map2
+      .award__location=award.location
+      .award__icon
+        span.my-cv__icon--calendar
+      .award__date=award.date
