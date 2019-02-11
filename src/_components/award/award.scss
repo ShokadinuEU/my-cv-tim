@@ -1,0 +1,28 @@
+.award__header {
+  color: $color-periwinkle-gray;
+  @extend %header;
+}
+
+.award__title {
+  font-weight: bold;
+}
+
+.award__card {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-bottom: 0.2rem solid $color-fiord;
+  display: flex;
+  flex-wrap: wrap;
+
+  &>div {
+    border-top: 0.1rem solid $color-fiord;
+  }
+
+  &>div:nth-child(even) {
+    width: 75%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+  }
+}
