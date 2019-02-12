@@ -1,0 +1,34 @@
+//- the model, the data
+-
+  var header = '#skills';
+  var skills = [
+    {
+      title: 'Front End',
+      skillList: [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'ReactJS',
+        'Sass',
+        'Pug'
+      ]
+    },
+    {
+      title: 'BackEnd',
+      skillList: [
+        'NodeJS(basic)',
+        'ExpressJS(basic)',
+        'MongoDB(basic)'
+      ]
+    }
+  ];
+
+//- the presentation, the view
+#skills
+.skills
+  .skills__header=header
+  each skillLang in skills
+    .skills__title=skillLang.title
+    .skills__list
+      each skill in skillLang.skillList
+        .skills__skill=skill
