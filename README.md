@@ -26,3 +26,7 @@ I like the ideea of puttig reusable code into a variable and make use of it wher
 ### Vid 12
 
 I like the "+" selector plus the ":checked" state of css "smart" selectors it work like if/else statement in javascript. Also introduction to more complex data structures like arrays inside of an object.
+
+### Vid 13
+
+Need more explanation on ":check" and "+" selectors, i feel abit lost when i combine all those "tricks" like connection between label and input and applying style on them when they have different state(:checked).
