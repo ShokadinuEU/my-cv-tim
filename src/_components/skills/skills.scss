@@ -26,4 +26,12 @@
   border-radius: 0.5rem;
   font-size: 1.4rem;
   white-space: nowrap;
+  transition: all .7s;
+    &:hover {
+      background-color: rgb(204, 185, 185);
+      color: blue;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .7s;
+    }
 }
