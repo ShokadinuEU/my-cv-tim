@@ -24,3 +24,5 @@ Good review on javascript variables, how to store data into variables and how to
 I like the ideea of puttig reusable code into a variable and make use of it wherever we want like in this video took the css values and property from the previous section header then put it in a separate file and then extend it to award section aswell and probabili on all other next header sections that come.
 
 ### Vid 12
+
+I like the "+" selector plus the ":checked" state of css "smart" selectors it work like if/else statement in javascript. Also introduction to more complex data structures like arrays inside of an object.

@@ -62,10 +62,10 @@
 #experience
 .experience
   .experience__header=header
-  input.experience__input(type="radio", name="same-name", id="experience-default")
+  input.experience__input(type="radio", name="cool-name", id="experience-default")
 
   each experience, key in experienceList
-    input.experience__input(type="radio", name="same-name", id=`experience-id-${key}`)
+    input.experience__input(type="radio", name="cool-name", id=`experience-id-${key}`)
     label.experience__title(for=`experience-id-${key}`)
       | #{experience.title}
       label(for="experience-default")
@@ -77,4 +77,3 @@
       .experience__list
         each responsability in experience.responsabilityList
           .experience__responsability=responsability
-
