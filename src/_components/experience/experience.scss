@@ -23,6 +23,12 @@
   cursor: pointer;
 }
 
+.experience__title:hover {
+  .my-cv__icon--plus {
+    color: green;
+  }
+}
+
 .experience__details {
   border: 0.2rem solid $color-gumbo;
 }
@@ -44,12 +50,14 @@
 .experience__date {
   font-size: 1.2rem;
   padding: 1rem;
+  user-select: none;
 }
 
 .experience__responsability {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   line-height: 1.1;
+  user-select: none;
 
   &:nth-child(odd) {
     background-color: $color-fantasy;
@@ -71,5 +79,8 @@
     transform: rotateZ(45deg);
     pointer-events: all;
     cursor: pointer;
+    &:hover{
+      color: red;
+    }
   }
 }
