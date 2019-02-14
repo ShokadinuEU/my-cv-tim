@@ -1,0 +1,57 @@
+-
+  var myFullName = "Timotei Dumitru"
+  var myJobTitle = "Front End Developer"
+  var socialList = [
+    {
+      "icon": "linkedin",
+       "url": "https://www.linkedin.com/in/timotei-dumitru-1494ab160"
+    },
+    {
+      "icon": "github",
+       "url": "https://github.com/ShokadinuEU"
+    },
+    {
+      "icon": "earth",
+       "url": "https://shokadinueu.github.io/fashion-today/"
+    },
+    {
+      "icon": "facebook2",
+       "url": "https://www.facebook.com/dumitru.timy"
+    },
+    {
+      "icon": "google-plus2",
+       "url": "https://plus.google.com/112277218680998369339"
+    },
+    {
+      "icon": "youtube",
+       "url": "https://www.youtube.com/channel/UC1Um2yxwhLCDEURVFfEYuzw"
+    },
+    {
+      "icon": "stackoverflow",
+       "url": "https://stackoverflow.com/users/9764786/dumitru-timotei?tab=profile"
+    },
+    {
+      "icon": "twitter",
+       "url": "https://twitter.com"
+    }
+  ]
+#landing-page
+.landing-page
+  .landing-page__wrapper
+    h1.landing-page__name=myFullName
+    h2.landing-page__title=myJobTitle
+    ul.landing-page__social
+      each social, key in socialList
+        li.landing-page__item
+          label.landing-page__label(for=`message-box-id-${key}`)
+            span(class=`my-cv__icon--${social.icon}`)
+    .landing-page__box-body
+      input.landing-page__box-radio(type="radio", name="same-name", checked, id="default-message-radio")
+      .landing-page__box-message Click on the above icons to reveal!
+      .landing-page__box-header
+        .landing-page__box-info Click to visit
+        label.landing-page__box-close(for="default-message-radio") &times;
+      each social, key in socialList
+        input.landing-page__box-radio(type="radio", name="same-name", id=`message-box-id-${key}`)
+        .landing-page__box-message
+          a.landing-page__box-link(href=social.url, target="_blank")=social.url

@@ -1,5 +1,9 @@
-// @import '_component/config/color';
-// @import '_component/config/typography';
-// @import '_component/layout/layout';
-// @import '_component/header/header';
-// @import '_component/footer/footer';
+@import "_components/config/reset";
+@import "_components/config/color";
+@import "_components/layout/layout";
+@import "_components/font/icon-font";
+@import "_components/landing-page/landing-page";
+@import "_components/about-me/about-me";
+@import "_components/award/award";
+@import "_components/skills/skills";
+@import "_components/experience/experience";

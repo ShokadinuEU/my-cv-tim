@@ -1,0 +1,79 @@
+//- model, data
+-
+  var header = '#experience'
+  var experienceList = [
+      {
+        title: 'Junior Front-End Developer',
+        date: '2017 Jun - Present',
+        company: 'BitBee',
+        responsabilityList: [
+          'I\'ve learn how to consume data provided by API or different endpoints provided by backend services.',
+          'I\'ve learn to use routing system in ReactJS, a feature that imitate the old way of making websites(like multiple pages website). ',
+          'I\'ve built single and multi page websites using responsive web design or fluid typography with mobile first approach.',
+          'I\'ve used custom icons to improve loading speeds and make it easier to maintain.',
+          'I\'ve optimised the websites in loading speed minifying JavaScript, CSS and HTML, reducing the number of requests to the server.',
+          'I\'ve oprimized images by compressing them for faster transfer load of the page.',
+          'I\'ve learned how to prioritize the visible content for a feaster load of the page.',
+          'I\'ve worked and deployed in development and production environments.',
+          'I\'ve got 98-100 LightHouse, Google Page Analythics score and can reach the PERFECT score.'
+        ]
+      },
+      {
+        title: 'Sale Manager',
+        date: '2016 Jul - 2017 May',
+        company: 'Solaris@Dum',
+        responsabilityList: [
+          'Meet with customers to discuss their evolving needs and to assess the quality of our company’s relationship with them.',
+          'Provide on-the-ground support for sales associates as they generate leads and close new deals.',
+          'After this job I\'ve decided to move to London.'
+        ]
+      },
+      {
+        title: 'Network Technician',
+        date: '2015 Jan - 2016 Jun',
+        company: 'FiberLink',
+        responsabilityList: [
+          'Develop and maintain local networks in ways that optimize performance.',
+          'Ensure security and privacy of networks and computer systems.',
+          'Organize and schedule upgrades and maintenance without deterring others from completing their work. ',
+          'Provide technical support to clients through various channels of communication.',
+          'Manage and support LAN and WAN Network devices. '
+        ]
+      },
+      {
+        title: 'IT Technician',
+        date: '2012 Oct - 2014 Dec',
+        company: 'Computers Warehouse',
+        responsabilityList: [
+          'Set up workstations with computers and necessary peripheral devices (routers, printers etc.).',
+          'Check computer hardware (HDD, VideoCard, RAM etc.) to ensure functionality.',
+          'Install and configure appropriate software and functions according to specifications.',
+          'Provide orientation and guidance to users on how to operate new software and computer equipment.',
+          'Organize and schedule upgrades and maintenance without deterring others from completing their work.',
+          'Perform troubleshooting to diagnose and resolve problems (repair or replace parts, debugging etc.)',
+          'Identify computer or network equipment shortages and place orders.'
+        ]
+      },
+  ];
+
+//-  view, presentation
+//- CSS "+" :cheaked input controled container (div, or whatever)
+
+#experience
+.experience
+  .experience__header=header
+  input.experience__input(type="radio", name="cool-name", id="experience-default")
+
+  each experience, key in experienceList
+    input.experience__input(type="radio", name="cool-name", id=`experience-id-${key}`)
+    label.experience__title(for=`experience-id-${key}`)
+      | #{experience.title}
+      label(for="experience-default")
+        span.my-cv__icon--plus
+    .experience__details
+      .experience__top
+        .experience__date=experience.date
+        .experience__company=experience.company
+      .experience__list
+        each responsability in experience.responsabilityList
+          .experience__responsability=responsability
