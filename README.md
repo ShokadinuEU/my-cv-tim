@@ -30,3 +30,10 @@ I like the "+" selector plus the ":checked" state of css "smart" selectors it wo
 ### Vid 13
 
 Need more explanation on ":check" and "+" selectors, i feel abit lost when i combine all those "tricks" like connection between label and input and applying style on them when they have different state(:checked).
+
+### Vid 14
+
+Interesting using ":nth-child" to imitate for loop in SASS. Also that ideea of image sprite incress performance by alot :)
+
+### Vid 15
+
