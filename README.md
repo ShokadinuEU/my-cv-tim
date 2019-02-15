@@ -37,3 +37,4 @@ Interesting using ":nth-child" to imitate for loop in SASS. Also that ideea of i
 
 ### Vid 15
 
+With this last part of the project and after repetting the same techniques on the others sections I can say that I got confortable with creating dynamic content and print it to page using "each" method from javascript.
