@@ -32,8 +32,10 @@
     }
   ]
 
-.menu_list
-  each menu in menuList
-    a.menu_link(href=menu.link)
-      span(class=`my-cv__icon--${menu.icon}`)
-      span=menu.label
+#menu
+.menu
+  .menu__list
+    each menu in menuList
+      a.menu__link(href=menu.link)
+        span(class=`my-cv__icon--${menu.icon} menu-icon`)
+        span=menu.label
