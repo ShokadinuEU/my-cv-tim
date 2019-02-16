@@ -1,0 +1,14 @@
+.project__header {
+  color: $color-periwinkle-gray;
+  @extend %header;
+}
+
+.project__image {
+  text-align: center;
+  margin: 1em auto;
+}
+
+.project__image img {
+  width: 100%;
+  max-width: 425px;
+}

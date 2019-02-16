@@ -48,6 +48,6 @@
   .about-me__title=myDocuments.title
   .about-me__link-list
     each document in myDocuments.buttonList
-      a.about-me__link(href=document.url)
+      a.about-me__link(href=document.url, target="_blank")
         span.about-me__link-description=document.label
         span(class=`my-cv__icon--${document.icon}`)

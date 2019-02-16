@@ -30,3 +30,15 @@ I like the "+" selector plus the ":checked" state of css "smart" selectors it wo
 ### Vid 13
 
 Need more explanation on ":check" and "+" selectors, i feel abit lost when i combine all those "tricks" like connection between label and input and applying style on them when they have different state(:checked).
+
+### Vid 14
+
+Interesting using ":nth-child" to imitate for loop in SASS. Also that ideea of image sprite incress performance by alot :)
+
+### Vid 15
+
+With this last part of the project and after repeating the same techniques on the others sections I can say that I got confortable with creating dynamic content and print it to page using "each" method from javascript.
+
+### Vid 16
+
+Good understanding of setting some css property depend on the state of an input like "input:checked" act like toggle a class on a html element using javascript.
