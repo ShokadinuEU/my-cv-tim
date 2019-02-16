@@ -37,4 +37,8 @@ Interesting using ":nth-child" to imitate for loop in SASS. Also that ideea of i
 
 ### Vid 15
 
-With this last part of the project and after repetting the same techniques on the others sections I can say that I got confortable with creating dynamic content and print it to page using "each" method from javascript.
+With this last part of the project and after repeating the same techniques on the others sections I can say that I got confortable with creating dynamic content and print it to page using "each" method from javascript.
+
+### Vid 16
+
+Good understanding of setting some css property depend on the state of an input like "input:checked" act like toggle a class on a html element using javascript.
